@@ -10,10 +10,13 @@
 		779CDB739E6170626AE69A02 /* Pods_OnlineEcommerceApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0631BE379D7F09CCB76C1A35 /* Pods_OnlineEcommerceApp.framework */; };
 		CE0088922904058D00428C0C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0088912904058D00428C0C /* AppDelegate.swift */; };
 		CE0088942904058D00428C0C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0088932904058D00428C0C /* SceneDelegate.swift */; };
-		CE0088962904058D00428C0C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0088952904058D00428C0C /* ViewController.swift */; };
 		CE0088992904058D00428C0C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE0088972904058D00428C0C /* Main.storyboard */; };
 		CE00889B2904058F00428C0C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE00889A2904058F00428C0C /* Assets.xcassets */; };
 		CE00889E2904058F00428C0C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE00889C2904058F00428C0C /* LaunchScreen.storyboard */; };
+		CEF68CF729058C7300C0ED0A /* CategoryCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF68CF629058C7300C0ED0A /* CategoryCollectionViewController.swift */; };
+		CEF68CF929058D4B00C0ED0A /* CategoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF68CF829058D4B00C0ED0A /* CategoryCollectionViewCell.swift */; };
+		CEF68CFB29058F7100C0ED0A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CEF68CFA29058F7100C0ED0A /* GoogleService-Info.plist */; };
+		CEF68CFD2905932500C0ED0A /* FirebaseCollectionReference.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF68CFC2905932500C0ED0A /* FirebaseCollectionReference.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,11 +26,14 @@
 		CE00888E2904058D00428C0C /* OnlineEcommerceApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OnlineEcommerceApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE0088912904058D00428C0C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE0088932904058D00428C0C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CE0088952904058D00428C0C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CE0088982904058D00428C0C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CE00889A2904058F00428C0C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE00889D2904058F00428C0C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE00889F2904058F00428C0C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEF68CF629058C7300C0ED0A /* CategoryCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCollectionViewController.swift; sourceTree = "<group>"; };
+		CEF68CF829058D4B00C0ED0A /* CategoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCollectionViewCell.swift; sourceTree = "<group>"; };
+		CEF68CFA29058F7100C0ED0A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		CEF68CFC2905932500C0ED0A /* FirebaseCollectionReference.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseCollectionReference.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,7 +54,6 @@
 				57DFCBCF737973741EECA8F6 /* Pods-OnlineEcommerceApp.debug.xcconfig */,
 				9FCE5B25C1C8499F3901DF08 /* Pods-OnlineEcommerceApp.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -74,12 +79,15 @@
 			isa = PBXGroup;
 			children = (
 				CE0088912904058D00428C0C /* AppDelegate.swift */,
+				CEF68CFC2905932500C0ED0A /* FirebaseCollectionReference.swift */,
 				CE0088932904058D00428C0C /* SceneDelegate.swift */,
-				CE0088952904058D00428C0C /* ViewController.swift */,
+				CEF68CF829058D4B00C0ED0A /* CategoryCollectionViewCell.swift */,
+				CEF68CF629058C7300C0ED0A /* CategoryCollectionViewController.swift */,
 				CE0088972904058D00428C0C /* Main.storyboard */,
 				CE00889A2904058F00428C0C /* Assets.xcassets */,
 				CE00889C2904058F00428C0C /* LaunchScreen.storyboard */,
 				CE00889F2904058F00428C0C /* Info.plist */,
+				CEF68CFA29058F7100C0ED0A /* GoogleService-Info.plist */,
 			);
 			path = OnlineEcommerceApp;
 			sourceTree = "<group>";
@@ -153,6 +161,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE00889E2904058F00428C0C /* LaunchScreen.storyboard in Resources */,
+				CEF68CFB29058F7100C0ED0A /* GoogleService-Info.plist in Resources */,
 				CE00889B2904058F00428C0C /* Assets.xcassets in Resources */,
 				CE0088992904058D00428C0C /* Main.storyboard in Resources */,
 			);
@@ -207,9 +216,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE0088962904058D00428C0C /* ViewController.swift in Sources */,
+				CEF68CF929058D4B00C0ED0A /* CategoryCollectionViewCell.swift in Sources */,
 				CE0088922904058D00428C0C /* AppDelegate.swift in Sources */,
+				CEF68CFD2905932500C0ED0A /* FirebaseCollectionReference.swift in Sources */,
 				CE0088942904058D00428C0C /* SceneDelegate.swift in Sources */,
+				CEF68CF729058C7300C0ED0A /* CategoryCollectionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
