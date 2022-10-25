@@ -13,6 +13,8 @@
 		CE0088992904058D00428C0C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE0088972904058D00428C0C /* Main.storyboard */; };
 		CE00889B2904058F00428C0C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE00889A2904058F00428C0C /* Assets.xcassets */; };
 		CE00889E2904058F00428C0C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE00889C2904058F00428C0C /* LaunchScreen.storyboard */; };
+		CE1CF2C1290831D100B5007C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1CF2C0290831D100B5007C /* Constants.swift */; };
+		CEB439B029066FC0003D7663 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB439AF29066FC0003D7663 /* Category.swift */; };
 		CEF68CF729058C7300C0ED0A /* CategoryCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF68CF629058C7300C0ED0A /* CategoryCollectionViewController.swift */; };
 		CEF68CF929058D4B00C0ED0A /* CategoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF68CF829058D4B00C0ED0A /* CategoryCollectionViewCell.swift */; };
 		CEF68CFB29058F7100C0ED0A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CEF68CFA29058F7100C0ED0A /* GoogleService-Info.plist */; };
@@ -30,6 +32,8 @@
 		CE00889A2904058F00428C0C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE00889D2904058F00428C0C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE00889F2904058F00428C0C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE1CF2C0290831D100B5007C /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		CEB439AF29066FC0003D7663 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		CEF68CF629058C7300C0ED0A /* CategoryCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCollectionViewController.swift; sourceTree = "<group>"; };
 		CEF68CF829058D4B00C0ED0A /* CategoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCollectionViewCell.swift; sourceTree = "<group>"; };
 		CEF68CFA29058F7100C0ED0A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -79,10 +83,11 @@
 			isa = PBXGroup;
 			children = (
 				CE0088912904058D00428C0C /* AppDelegate.swift */,
-				CEF68CFC2905932500C0ED0A /* FirebaseCollectionReference.swift */,
 				CE0088932904058D00428C0C /* SceneDelegate.swift */,
-				CEF68CF829058D4B00C0ED0A /* CategoryCollectionViewCell.swift */,
-				CEF68CF629058C7300C0ED0A /* CategoryCollectionViewController.swift */,
+				CEB439AD29066F61003D7663 /* Main Views */,
+				CEB439B129066FC9003D7663 /* Model */,
+				CEB439AE29066F70003D7663 /* Custom Cells */,
+				CEB439AC29066F16003D7663 /* Helpers */,
 				CE0088972904058D00428C0C /* Main.storyboard */,
 				CE00889A2904058F00428C0C /* Assets.xcassets */,
 				CE00889C2904058F00428C0C /* LaunchScreen.storyboard */,
@@ -90,6 +95,39 @@
 				CEF68CFA29058F7100C0ED0A /* GoogleService-Info.plist */,
 			);
 			path = OnlineEcommerceApp;
+			sourceTree = "<group>";
+		};
+		CEB439AC29066F16003D7663 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				CEF68CFC2905932500C0ED0A /* FirebaseCollectionReference.swift */,
+				CE1CF2C0290831D100B5007C /* Constants.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		CEB439AD29066F61003D7663 /* Main Views */ = {
+			isa = PBXGroup;
+			children = (
+				CEF68CF629058C7300C0ED0A /* CategoryCollectionViewController.swift */,
+			);
+			path = "Main Views";
+			sourceTree = "<group>";
+		};
+		CEB439AE29066F70003D7663 /* Custom Cells */ = {
+			isa = PBXGroup;
+			children = (
+				CEF68CF829058D4B00C0ED0A /* CategoryCollectionViewCell.swift */,
+			);
+			path = "Custom Cells";
+			sourceTree = "<group>";
+		};
+		CEB439B129066FC9003D7663 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CEB439AF29066FC0003D7663 /* Category.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		FEA7C2D7F09634FA84E6914B /* Frameworks */ = {
@@ -220,7 +258,9 @@
 				CE0088922904058D00428C0C /* AppDelegate.swift in Sources */,
 				CEF68CFD2905932500C0ED0A /* FirebaseCollectionReference.swift in Sources */,
 				CE0088942904058D00428C0C /* SceneDelegate.swift in Sources */,
+				CE1CF2C1290831D100B5007C /* Constants.swift in Sources */,
 				CEF68CF729058C7300C0ED0A /* CategoryCollectionViewController.swift in Sources */,
+				CEB439B029066FC0003D7663 /* Category.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

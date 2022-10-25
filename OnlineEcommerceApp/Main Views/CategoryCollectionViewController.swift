@@ -13,7 +13,11 @@ class CategoryCollectionViewController: UICollectionViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        downloadCategoriesFromFirebase { (allCategories) in
+            print("callback is completed")
+        }
+        
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
