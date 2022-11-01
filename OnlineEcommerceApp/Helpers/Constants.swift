@@ -7,13 +7,17 @@
 
 import Foundation
 
-//Firebase Headers
-public let kUSER_PATH = "User"
-public let kCATEGORY_PATH = "Category"
-public let kITEMS_PATH = "Items"
-public let kBASKET_PATH = "Basket"
+final class Constants {
+    
+    //Firebase Headers
+    static public let kUSER_PATH = "User"
+    static public let kCATEGORY_PATH = "Category"
+    static public let kITEMS_PATH = "Items"
+    static public let kBASKET_PATH = "Basket"
 
-// Category constants
-public let kNAME = "name"
-public let kIMAGENAME = "imagename"
-public let kOBJECTID = "odjectId"
+    // Category constants
+    static public let kNAME = "name"
+    static public let kIMAGENAME = "imagename"
+    static public let kOBJECTID = "odjectId"
+
+}

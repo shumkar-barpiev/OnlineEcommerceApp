@@ -8,28 +8,28 @@
 import Foundation
 import UIKit
 
-class Category{
+class Category {
     var id: String
     var name: String
     var image: UIImage?
     var imageName: String?
     
     init(_name: String, _imageName: String){
-        id = ""
+        id = "" 
         name = _name
         imageName = _imageName
         image = UIImage(named: _imageName)
     }
     
     init(_dictionary: NSDictionary){
-        id = _dictionary[kOBJECTID] as! String
-        name = _dictionary[kNAME] as! String
-        image = UIImage(named: _dictionary[kIMAGENAME] as? String ?? "")
+        id = _dictionary[Constants.kOBJECTID] as! String
+        name = _dictionary[Constants.kNAME] as! String
+        image = UIImage(named: _dictionary[Constants.kIMAGENAME] as? String ?? "")
     }
 }
 
-//MARK:  download category from Firebase
-func  downloadCategoriesFromFirebase(completion: @escaping (_ categoryArray: [Category]) -> Void){
+// MARK: - download category from Firebase
+func downloadCategoriesFromFirebase(completion: @escaping([Category]) -> Void){
     var categoryArray: [Category] = []
     
     FirebaseReference(.Category).getDocuments { (snapshot, error) in
@@ -48,8 +48,9 @@ func  downloadCategoriesFromFirebase(completion: @escaping (_ categoryArray: [Ca
     }
 }
 
-//MARK: save category function
-func saveCategoryToFirebase(_ category: Category){
+//MARK: - save category function
+
+func saveCategoryToFirebase(_ category: Category) {
     let id = UUID().uuidString
     category.id = id
     
@@ -59,8 +60,8 @@ func saveCategoryToFirebase(_ category: Category){
 //MARK: helpers
 func  categoryDictionaryFrom(_ category: Category) -> NSDictionary{
     
-    return NSDictionary(objects: [category.id, category.name, category.imageName],
-                        forKeys: [ kOBJECTID as NSCopying, kNAME as NSCopying, kIMAGENAME as NSCopying])
+    return NSDictionary(objects: [category.id, category.name, category.imageName ?? ""],
+                        forKeys: [ Constants.kOBJECTID as NSCopying, Constants.kNAME as NSCopying, Constants.kIMAGENAME as NSCopying])
 }
 
 

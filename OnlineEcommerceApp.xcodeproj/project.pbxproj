@@ -13,6 +13,7 @@
 		CE0088992904058D00428C0C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE0088972904058D00428C0C /* Main.storyboard */; };
 		CE00889B2904058F00428C0C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE00889A2904058F00428C0C /* Assets.xcassets */; };
 		CE00889E2904058F00428C0C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE00889C2904058F00428C0C /* LaunchScreen.storyboard */; };
+		CE18443529116DF8006B68A8 /* ItemsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE18443429116DF8006B68A8 /* ItemsTableViewController.swift */; };
 		CE1CF2C1290831D100B5007C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1CF2C0290831D100B5007C /* Constants.swift */; };
 		CEB439B029066FC0003D7663 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB439AF29066FC0003D7663 /* Category.swift */; };
 		CEF68CF729058C7300C0ED0A /* CategoryCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF68CF629058C7300C0ED0A /* CategoryCollectionViewController.swift */; };
@@ -32,6 +33,7 @@
 		CE00889A2904058F00428C0C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE00889D2904058F00428C0C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE00889F2904058F00428C0C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE18443429116DF8006B68A8 /* ItemsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsTableViewController.swift; sourceTree = "<group>"; };
 		CE1CF2C0290831D100B5007C /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		CEB439AF29066FC0003D7663 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		CEF68CF629058C7300C0ED0A /* CategoryCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCollectionViewController.swift; sourceTree = "<group>"; };
@@ -110,6 +112,7 @@
 			isa = PBXGroup;
 			children = (
 				CEF68CF629058C7300C0ED0A /* CategoryCollectionViewController.swift */,
+				CE18443429116DF8006B68A8 /* ItemsTableViewController.swift */,
 			);
 			path = "Main Views";
 			sourceTree = "<group>";
@@ -256,6 +259,7 @@
 			files = (
 				CEF68CF929058D4B00C0ED0A /* CategoryCollectionViewCell.swift in Sources */,
 				CE0088922904058D00428C0C /* AppDelegate.swift in Sources */,
+				CE18443529116DF8006B68A8 /* ItemsTableViewController.swift in Sources */,
 				CEF68CFD2905932500C0ED0A /* FirebaseCollectionReference.swift in Sources */,
 				CE0088942904058D00428C0C /* SceneDelegate.swift in Sources */,
 				CE1CF2C1290831D100B5007C /* Constants.swift in Sources */,
